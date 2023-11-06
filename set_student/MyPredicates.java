@@ -28,10 +28,8 @@ public class MyPredicates {
 	// is true.
 	public static <T> Set<T> collect(Collection<T> coll, Predicate<T> p) {
 		Set<T> result = new HashSet<>();
-		System.out.println("a");
 		for (T obj : coll) {
 			if (p.test(obj)) {
-				System.out.println("a");
 				result.add(obj);
 			}
 		}
@@ -55,12 +53,12 @@ public class MyPredicates {
 	public static void main(String[] args) {
 		List<Integer> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 1, 2));
 		Predicate<Integer> evenPredicate = new Even();
-//
-//		CollectionUtils.remove(numbers, evenPredicate);
+
+//		remove(numbers, evenPredicate);
 //		System.out.println(numbers);
-//		CollectionUtils.retain(numbers, evenPredicate);
+//		retain(numbers, evenPredicate);
 //		System.out.println(numbers);
-		System.out.println(CollectionUtils.collect(numbers, evenPredicate));
-		System.out.println(CollectionUtils.find(numbers, evenPredicate));
+		System.out.println(collect(numbers, evenPredicate));
+		System.out.println(find(numbers, evenPredicate));
 	}
 }

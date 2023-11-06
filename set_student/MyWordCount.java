@@ -126,14 +126,14 @@ public class MyWordCount {
 
 	public static void main(String[] args) {
 		MyWordCount myWordCount = new MyWordCount();
-		List<WordCount> list1 = myWordCount.getWordCounts();
+		List<WordCount> list = myWordCount.getWordCounts();
 		Set<String> set1 = myWordCount.getUniqueWords();
 		Set<String> set2 = myWordCount.getDistinctWords();
 		Set<WordCount> set3 = myWordCount.printWordCounts();
 		Set<WordCount> set4 = myWordCount.exportWordCountsByOccurence();
 		Set<String> set5 = myWordCount.filterWords("L");
 
-//		System.out.println(list1);
+//		System.out.println(list);
 //		System.out.println(set1);
 //		System.out.println(set2);
 //		System.out.println(set3);
